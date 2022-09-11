@@ -1,0 +1,28 @@
+<%= form_for @task do |f| %>
+  <%= f.label :title, "Title"%>
+  <%= f.text_field :title %>
+
+  <%= f.label :details, "Details"%>
+  <%= f.text_field :details %>
+
+  <%= f.label :completed, "Completed?"%>
+  <%= f.check_box :completed %>
+
+  <%= f.submit %>
+<% end %>
+
+
+
+<%# <form action="/tasks" method="post">
+  <label for="title">Title</label>
+  <input type="text" name="task[title]" placeholder="Do homework">
+
+  <label for="details">Details</label>
+  <input type="text" name="task[details]" placeholder="Math homework">
+
+  <label for="completed">Completed?</label>
+  <input type="checkbox" name="task[completed]">
+
+  <input type="submit">
+
+</form> %>
